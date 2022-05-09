@@ -5,6 +5,7 @@ import sys
 import cv2
 import numpy as np
 sys.path.append('cut')
+from cut.options.base_options import BaseOptions
 from cut.options.test_options import TestOptions
 from cut.models import create_model
 from cut.data import create_dataset
@@ -33,10 +34,11 @@ def tensor2numpy(tensor_img):
 
 
 if __name__ == '__main__':
-    opt = TestOptions().parse()
-    opt.dataroot = DATASET_FOLDER
+    testoptions = TestOptions()
 
     # test parameters for cut network
+    opt = testoptions.gather_options()
+    opt.dataroot = DATASET_FOLDER
     opt.gpu_ids = ''
     opt.num_threads = 0
     opt.batch_size = 1    # test code only supports batch_size = 1
@@ -44,6 +46,8 @@ if __name__ == '__main__':
     opt.no_flip = True
     opt.display_id = -1
     opt.name = ''
+    opt.isTrain = False
+    testoptions.print_options(opt)
 
     print("Fetching pretrained model...")
     PRETRAINED_NET_D_GDRIVE_ID = '1G0G8Dkn167CP_zJNp3hzNASMfy4MT2ks'
