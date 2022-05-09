@@ -97,4 +97,5 @@ if __name__ == '__main__':
             inference_result_v = np.vstack((inference_result_v, inference_plot))
 
     cv2.imwrite(opt.results_dir + 'inference_result_v.png', inference_result_v)
+    print("Inference complete, output can be found in results/ folder.")
 
