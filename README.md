@@ -7,9 +7,12 @@ We provide out implementation for the Intermediate Representation (IR) generatio
 Follow these steps to get the code running on your local machine!
 Prerequisites
 
-## Prerequisites
+## Installation
 
 ```
+git clone https://github.com/cactuss-ct-us/cactuss.git
+git submodule init
+git submodule update
 pip install -r requirements.txt
 ```
 
