@@ -1,2 +1,5 @@
 .idea
 .git
+checkpoints/
+datasets/
+results/
