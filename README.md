@@ -9,7 +9,7 @@ Follow the steps below to get the code running on your local machine.
 ## Installation
 
 ```
-git clone https://github.com/cactuss-ct-us/cactuss.git
+git clone https://github.com/danivelikova/cactuss.git
 git submodule init
 git submodule update
 pip install -r requirements.txt
