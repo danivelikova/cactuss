@@ -11,6 +11,7 @@ Follow the steps below to get the code running on your local machine.
 
 ```
 git clone https://github.com/danivelikova/cactuss.git
+cd cactuss
 git submodule init
 git submodule update
 pip install -r requirements.txt
