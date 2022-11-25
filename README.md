@@ -1,7 +1,7 @@
 # CACTUSS: Common Anatomical CT-US Space for US examinations
 ![cactuss_pipeline](https://user-images.githubusercontent.com/14922785/184475714-4c2a75f6-ef65-484a-9940-b44719e9a2f5.png)
 
-CACTUSS projects generates a common anatomical space between CT and Ultrasound images. We provide our implementation for the second step of the CACTUSS pipeline, which is the Intermediate Representation (IR) translation step for any input B-mode image.
+CACTUSS project generates a common anatomical space between CT and Ultrasound images. We provide our implementation for the second step of the CACTUSS pipeline, which is the Intermediate Representation (IR) translation step for any input B-mode image.
 
 ## Getting started
 
